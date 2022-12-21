@@ -32,7 +32,12 @@ const Login = () => {
           paddingY={16}
         >
           <Stack align={"center"} mb={8}>
-            <Heading fontSize={"4xl"} color="blackAlpha.700">Login</Heading>
+            <Heading fontSize={"4xl"}>
+              Acesse ao painel:<br/>
+              <Text as={"span"} color={"green.400"} fontSize="2xl">
+                Organize seus convites
+              </Text>
+            </Heading>
           </Stack>
           <Stack spacing={4}>
             <FormControl id="email">
@@ -46,11 +51,10 @@ const Login = () => {
             <Stack spacing={10}>
               <Button
                 mt={8}
-                bg={"blue.400"}
+                colorScheme={"green"}
+                bg={"green.400"}
+                rounded={"full"}
                 color={"white"}
-                _hover={{
-                  bg: "blue.500",
-                }}
               >
                 Acessar
               </Button>
